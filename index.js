@@ -81,12 +81,14 @@ function edit(id) {
     text = prompt("Edit the text, to edit the color change it in the select color before hit edit link:",
     notes[id].text)
     let note = document.getElementById('note - ' + id)
+    let footer = note.getElementsByClassName('footer')[0]
     if(text){
         notes[id].text = text
         note.getElementsByClassName('body')[0].innerHTML = text
     }
     notes[id].color = document.getElementById('inColors').value
     note.style.backgroundColor = notes[id].color   
+    footer.style.backgroundColor=notes[id].color
 }
 
 function del(id) {
