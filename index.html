@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    Choose the color of note: 
+    <select name='colors' id='inColors' onchange='changeColor(this)'>
+        <option value="black">Black</option>
+        <option value="green">Green</option>
+        <option value="orange">Orange</option>
+        <option value="red">Red</option>
+        <option value="purple">Purple</option>
+        <option value="blue">Blue</option>
+        <option value="pink">Pink</option>
+    </select>
+    <button class='actionButton' onclick='add()'> Add </button>
+    <div id='note-container' style='margin-top:60px;'></div>
+    <script src="index.js"></script>
+</body>
+</html>
