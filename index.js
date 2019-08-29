@@ -85,10 +85,11 @@ function edit(id) {
     if(text){
         notes[id].text = text
         note.getElementsByClassName('body')[0].innerHTML = text
+        note.style.backgroundColor = notes[id].color   
+        footer.style.backgroundColor=notes[id].color
     }
     notes[id].color = document.getElementById('inColors').value
-    note.style.backgroundColor = notes[id].color   
-    footer.style.backgroundColor=notes[id].color
+    
 }
 
 function del(id) {

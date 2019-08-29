@@ -39,6 +39,7 @@
     float:left;
     margin: 5px;
     color: white;
+    box-shadow: 2px 2px 8px gray;
 }
 
 .footer {
